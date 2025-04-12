@@ -1,0 +1,150 @@
+/* DayPass.module.css */
+.daypass {
+    position: relative;
+    width: 100%;
+    padding: 6rem 0;
+  }
+  
+  .daypass__container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .daypass__background {
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.7;
+  }
+  
+  .daypass__content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .daypass__logo {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .daypass__logo-icon {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .daypass__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: var(--font-novatica-semi-bold);
+
+
+  }
+  
+  .daypass__description {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 1rem;
+    font-family: var(--font-novatica-semi-bold);
+
+  }
+  
+  .daypass__button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .daypass__button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .daypass__footer {
+    position: relative;
+    z-index: 2;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .daypass__question {
+    margin-bottom: 1.5rem;
+    font-family: var(--font-novatica-semi-bold);
+
+  }
+  
+  .daypass__button--secondary {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .daypass__button--secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Tablet (768px and up) */
+  @media (min-width: 768px) {
+    .daypass__content {
+      padding: 3rem 2rem;
+    }
+  
+    .daypass__title {
+      font-size: 3.5rem;
+    }
+  
+    .daypass__description {
+      font-size: 1.125rem;
+    }
+  
+    .daypass__logo {
+      width: 4rem;
+      height: 4rem;
+    }
+  
+    .daypass__logo-icon {
+      font-size: 2rem;
+    }
+    .daypass__container{
+        height: 60vh;
+    }
+  }
+  
+  /* Desktop (1024px and up) */
+  @media (min-width: 1024px) {
+    .daypass__content {
+      padding: 4rem 2rem;
+    }
+  
+    .daypass__title {
+      font-size: 4rem;
+    }
+  
+    .daypass__description {
+      font-size: 1.25rem;
+    }
+  }

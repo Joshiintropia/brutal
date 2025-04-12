@@ -1,0 +1,109 @@
+/* styles.module.css */
+.calendarWrapper {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.calendarContainer {
+  display: grid;
+  grid-template-columns: auto repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.timeColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 68px;
+  border: transparent;
+  padding: 0 68px;
+  border-width: thin;
+  border-style: solid;
+  border-right: thin solid #282828;
+}
+
+.emptyHeader {
+  height: 3rem;
+}
+
+.timeSlot {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  font-weight: 500;
+  font-family: var(--font-novatica-semi-bold);
+
+}
+
+.dayColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: transparent;
+  border-width: thin;
+  border-style: solid;
+  border-top: thin solid #282828;
+}
+
+.dayHeader {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: #9ca3af;
+  font-weight: 500;
+  font-family: var(--font-novatica-semi-bold);
+  border-bottom: thin solid #282828;
+}
+
+.classCard {
+  height: 6rem;
+  padding: 1rem;
+  background-color: #282828;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-novatica-semi-bold);
+
+}
+
+.classCard:hover {
+  background-color: #374151;
+}
+.buttonContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selected {
+  background-color: #111827;
+  box-shadow: 0 0 0 2px #B2EC5C;
+}
+
+.className {
+  color: white;
+  font-family: var(--font-novatica-semi-bold);
+}
+
+.instructor {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.hours {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.emptySlot {
+  height: 6rem;
+  border: 1px dashed #374151;
+  border-radius: 0.5rem;
+}

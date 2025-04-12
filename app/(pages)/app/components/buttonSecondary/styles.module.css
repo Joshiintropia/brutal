@@ -1,0 +1,10 @@
+.training_button {
+    background-color: #B9B0A3 !important;
+    color: white !important;
+    padding: 0.75rem 2rem !important;
+    border-radius: 4px !important;
+    text-transform: uppercase !important;
+    font-weight: 600 !important;
+    font-family: var(--font-montreal-medium)!important;
+  }
+  

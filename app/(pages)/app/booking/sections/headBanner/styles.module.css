@@ -1,0 +1,39 @@
+.headWrapper {
+  margin-top: 80px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headContainer {
+  max-width: 1040px;
+  padding: 80px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.headSubtitle {
+  font-family: var(--font-montreal-medium);
+  color: whitesmoke;
+}
+.headTitle {
+  font-family: var(--font-novatica-semi-bold);
+  font-weight: 600;
+  font-size: 56px;
+  color: whitesmoke;
+}
+.buttonHeadBanner {
+  font-family: var(--font-montreal-medium);
+  height: 38px;
+  border-radius: 4px;
+  opacity: 0px;
+  background-color: transparent;
+  border-color: white;
+  padding: 0 18px;
+}
+.buttonheadText {
+  color: white;
+}

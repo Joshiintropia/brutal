@@ -1,0 +1,109 @@
+/* styles.module.css */
+.bannerContainer {
+    width: 100%;
+    padding: 4rem 2rem;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bannerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+  
+  .logoWrapper {
+    position: relative;
+    flex-shrink: 0;
+    width: 50%;
+  }
+  
+  .logo {
+    width: auto;
+    height: auto;
+    filter: brightness(0.9) sepia(0.1) saturate(0.8);
+    width: -webkit-fill-available;
+  }
+  
+  .registered {
+    position: absolute;
+    right: -1rem;
+    bottom: 1rem;
+    color: #D4C9C0;
+    font-size: 1.5rem;
+  }
+  
+  .textContent {
+    flex: 1;
+  }
+  
+  .title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
+    font-family: var(--font-novatica-semi-bold);
+
+  }
+  
+  .description {
+    color: #D4C9C0;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    font-family: var(--font-novatica-semi-bold);
+
+  }
+  
+  .seeMoreButton {
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-novatica-semi-bold);
+
+  }
+  
+  .seeMoreButton:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  .arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .seeMoreButton:hover .arrow {
+    transform: translateX(5px);
+  }
+  
+  @media (max-width: 768px) {
+    .bannerContent {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+    }
+  
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

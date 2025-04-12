@@ -1,0 +1,60 @@
+.bannerSection {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.bannerSection::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.wrapperInfo{
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.bannerTitle {
+    color: white;
+    font-size: 2.5rem; /* Tamaño base para móvil */
+    font-weight: 700;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    padding: 1rem 1rem; /* Padding para evitar que el texto toque los bordes en móvil */
+    letter-spacing: 1px;
+    font-family: var(--font-novatica-semi-bold)
+}
+
+/* Tablet (768px y superior) */
+@media (min-width: 768px) {
+    .bannerTitle {
+        font-size: 3.5rem;
+    }
+}
+
+/* Desktop (1024px y superior) */
+@media (min-width: 1024px) {
+    .bannerTitle {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+}
+
+/* Pantallas grandes (1440px y superior) */
+@media (min-width: 1440px) {
+    .bannerTitle {
+        font-size: 4.5rem;
+    }
+    .bannerSection{
+        height: 58vh;
+    }
+}

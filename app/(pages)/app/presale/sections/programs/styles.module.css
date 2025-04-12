@@ -1,0 +1,100 @@
+/* Contenedor principal */
+.programs {
+    max-width: 1440px;
+    margin: 0 auto;
+ }
+  
+  /* Contenedor interno */
+  .programs__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Estilo de cada elemento (item) */
+  .programs__item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Wrapper para la imagen */
+  .programs__imageWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; /* Asegura que la imagen respete el borde redondeado */
+    overflow: hidden;
+  }
+  
+  /* Contenido dentro de cada item */
+  .programs__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* Título del programa */
+  .programs__title {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    z-index: 1; 
+    font-family: var(--font-novatica-semi-bold);
+
+  }
+  
+  /* Botón de Learn More */
+  .programs__button {
+    font-size: 16px;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+    font-family: var(--font-novatica-semi-bold);
+    width: 162px;
+  }
+  
+  .programs__button:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Botón de Add to Cart */
+  .programs__cart {
+    padding: 0.75rem 1.5rem;
+    background-color: #C4B5A6;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-montreal-medium);
+    height: 52px;
+    width: 220px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .programs__cart:hover {
+    background: #a39281;
+  }
+  
+  /* Estilo para pantallas grandes */
+  @media (min-width: 768px) {
+  
+    .programs__item {
+      flex: 1;
+      margin: 0 10px;
+    }
+  }
+  
